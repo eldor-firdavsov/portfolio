@@ -729,28 +729,50 @@ body.light-mode .project-description p {
 /* Different gradients for each project description */
 .project:nth-child(1) .project-description::before,
 .project:nth-child(1) .project-description::after {
-    background: linear-gradient(315deg, #6A00FF, #8B3DFF);
+    background: linear-gradient(315deg, #6A00FF, #C084FC); /* Violet to Soft Purple */
 }
 
 .project:nth-child(2) .project-description::before,
 .project:nth-child(2) .project-description::after {
-    background: linear-gradient(315deg, #4f00be, #9161f1);
+    background: linear-gradient(315deg, #4338CA, #A78BFA); /* Indigo Minimal */
 }
 
 .project:nth-child(3) .project-description::before,
 .project:nth-child(3) .project-description::after {
-    background: linear-gradient(315deg, #ff0058, #6A00FF);
+    background: linear-gradient(315deg, #F43F5E, #FBB1BD); /* Soft Red to Pink */
 }
 
 .project:nth-child(4) .project-description::before,
 .project:nth-child(4) .project-description::after {
-    background: linear-gradient(315deg, #03a9f4, #8B3DFF);
+    background: linear-gradient(315deg, #0EA5E9, #93C5FD); /* Sky Blue Minimal */
 }
 
 .project:nth-child(5) .project-description::before,
 .project:nth-child(5) .project-description::after {
-    background: linear-gradient(315deg, #6A00FF, #6A00FF);
+    background: linear-gradient(315deg, #7C3AED, #C4B5FD); /* Purple Mist */
 }
+
+.project:nth-child(6) .project-description::before,
+.project:nth-child(6) .project-description::after {
+    background: linear-gradient(315deg, #3B82F6, #A5B4FC); /* Blue Calm */
+}
+
+.project:nth-child(7) .project-description::before,
+.project:nth-child(7) .project-description::after {
+    background: linear-gradient(315deg, #FFD600, #FF6B00); /* Golden Sunrise */
+}
+
+.project:nth-child(8) .project-description::before,
+.project:nth-child(8) .project-description::after {
+    background: linear-gradient(315deg, #00C6A7, #0077B6); /* Teal to Deep Blue */
+}
+
+
+.project:nth-child(9) .project-description::before,
+.project:nth-child(9) .project-description::after {
+    background: linear-gradient(315deg, #FB923C, #FCD9B6); /* Soft Orange */
+}
+
 
 .project-description span {
     display: block;
