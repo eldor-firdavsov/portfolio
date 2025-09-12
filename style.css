@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:  0.3s  ;
 }
 
 body {
@@ -272,6 +272,38 @@ main {
     rotate: 110deg;
 }
 
+  
+.ilmla-link {
+    color: #0A0A0F;
+    text-decoration: none;
+    border-bottom: 2px dashed #632db56e;
+    display: inline-block;
+    position: relative;
+    padding: 0 .3em;
+    transition: all 0.7s;
+    z-index: 1000;
+  }
+  
+  .ilmla-link:before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 0%;
+    background: #632db56e;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: height 250ms;
+  }
+  
+  .ilmla-link:hover {
+    border-color: transparent;
+  }
+  
+  .ilmla-link:hover:before {
+    height: 100%;
+  }
+  
 body.light-mode .arrow {
     filter: brightness(1) invert(0);
 }
@@ -1307,4 +1339,28 @@ body.light-mode footer p {
         bottom: -30px;
         right: 30px;
     }
+}
+.project-description {
+  background: rgba(30, 15, 50, 0.8);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(106, 0, 255, 0.3);
+  position: relative;
+  transition: all 0.4s ease;
+}
+.project-description:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 50px rgba(255, 0, 200, 0.4);
+}
+.project-description::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255,0,200,0.3), transparent 70%);
+  border-radius: 50%;
+  filter: blur(20px);
 }
