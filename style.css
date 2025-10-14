@@ -1398,7 +1398,7 @@ body.light-mode footer p {
   top: -40px;
   left: 20px;
   width: 100px;
-  height: 100;
+  height: 100px;
   background: radial-gradient(circle, rgba(255,0,200,0.3), transparent 70%);
   border-radius: 50%;
   filter: blur(20px);
