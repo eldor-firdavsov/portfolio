@@ -505,10 +505,10 @@
 
         <section class="contact" id="contact" data-aos="fade-up">
             <h2 class="contact-h2">Get in Touch</h2>
-            <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+            <form class="contact-form" id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit" class="btn btn-4"><span>Send Message</span></button>
             </form>
             <div class="social-links" data-aos="fade-up" data-aos-delay="400">
@@ -529,6 +529,7 @@
         </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script>
         AOS.init({
@@ -575,6 +576,23 @@
     }
 
     type();
+
+    // Initialize EmailJS
+    emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+
+    // Handle form submission
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Send form data using EmailJS
+        emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+            .then(function() {
+                alert("Message sent successfully!");
+            }, function(error) {
+                alert("Failed to send message. Please try again later.");
+                console.error("EmailJS Error:", error);
+            });
+    });
 
 
     </script>
