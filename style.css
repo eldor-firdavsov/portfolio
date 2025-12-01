@@ -692,7 +692,25 @@ body.light-mode .experience-front {
 .project-image:hover {
     filter: blur(0);
 }
-  
+
+.project-vd {
+    width: 50%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: absolute;
+    bottom: 100px;
+}
+
+.project-vd {
+    transition: filter 0.5s linear;
+}
+
+.project-vd:hover {
+    filter: blur(0);
+}
+
 .project-description {
     background: rgba(26, 10, 47, 0.8);
     backdrop-filter: blur(10px);
